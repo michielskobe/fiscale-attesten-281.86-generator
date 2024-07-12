@@ -1,0 +1,23 @@
+{
+    "kapoenen": {
+        "startdag": "DD/MM/JJJJ",
+        "einddag": "DD/MM/JJJJ",
+        "aantal_dagen": "0",
+        "dagtarief": "0.0",
+        "tot_bedrag": "0"
+    },
+    "kawellen": {
+        "startdag": "DD/MM/JJJJ",
+        "einddag": "DD/MM/JJJJ",
+        "aantal_dagen": "0",
+        "dagtarief": "0.0",
+        "tot_bedrag": "0"
+    },
+    "jogis": {
+        "startdag": "DD/MM/JJJJ",
+        "einddag": "DD/MM/JJJJ",
+        "aantal_dagen": "0",
+        "dagtarief": "0.0",
+        "tot_bedrag": "0"
+    }
+}
