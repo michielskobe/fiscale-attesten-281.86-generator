@@ -7,8 +7,8 @@ Het gebruik van deze code vereist een beperkte kennis van Python en git.
 ### De repository clonen
 
 ```bash
-$ git clone git@github.com:michielskobe/fiscale-attesten-generator.git
-$ cd fiscale-attesten-generator
+$ git clone git@github.com:michielskobe/fiscale-attesten-281.86-generator.git
+$ cd fiscale-attesten-281.86-generator
 ```
 
 ### Python packages intalleren
@@ -23,7 +23,7 @@ $ pip install -r requirements.txt
 
 Dit Python-script maakt gebruik van een aantal bestanden om de fiscale attesten te genereren. De gegevens in deze bestanden moeten up-to-date gebracht worden met de gegevens van het afgelopen kamp. Daarnaast moet ook de informatie van de persoon die het attest zal ondertekenen aangepast worden.
 
-* TAKKEN\_DATA (takdata.json): Dit is een json bestand met volgende info per tak:
+* __TAKKEN\_DATA (takdata.json):__ Dit is een json bestand met volgende info per tak:
 
 |Info          |Uitleg                                      |
 |:-------------|:-------------------------------------------|
@@ -33,17 +33,17 @@ Dit Python-script maakt gebruik van een aantal bestanden om de fiscale attesten 
 |`dagtarief`   |Dagtarief in €/dag                          |
 |`tot_bedrag`  |Totaal bedrag = aantal dagen * dagtarief    |
 
-* BLANCO\_FISCAAL\_ATTEST (113-281-86-nl-2022.pdf): Dit is het modelattest dat gebruikt wordt. Dit kan best vervangen worden door een exemplaar waarbij ook de eerste pagina is ingevuld.
+* __BLANCO\_FISCAAL\_ATTEST (113-281-86-nl-2022.pdf):__ Dit is het modelattest dat gebruikt wordt. Dit kan best vervangen worden door een exemplaar waarbij ook de eerste pagina is ingevuld.
 
-* FORMULIER\_ANTWOORDEN (Fiscaal attest (Antwoorden) - Formulierreacties 1.csv): Dit is een CSV bestand met de informatie van de kampgangers die ingevuld moet worden in Vak II van het attest. Deze CSV is automatisch gegenereerd met een Google Formulier dat door de ouders ingevuld wordt. Google Forms laat niet toe om een formulier te downloaden, maar Google-Forms-template.pdf geeft een beeld van het gebruikte formulier. Je kan altijd contact opnemen met mij en dan bezorg ik je een kopie van het formulier waaruit je de vragen vervolgens kan exporteren.
+* __FORMULIER\_ANTWOORDEN (Fiscaal attest (Antwoorden) - Formulierreacties 1.csv):__ Dit is een CSV bestand met de informatie van de kampgangers die ingevuld moet worden in Vak II van het attest. Deze CSV is automatisch gegenereerd met een Google Formulier dat door de ouders ingevuld wordt. Google Forms laat niet toe om een formulier te downloaden, maar Google-Forms-template.pdf geeft een beeld van het gebruikte formulier. Je kan altijd contact opnemen met mij en dan bezorg ik je een kopie van het formulier waaruit je de vragen vervolgens kan exporteren.
 
-* ONDERTEKENAAR\_LOCATIE = Hier zet je de locatie van de persoon die de attesten zal ondertekenen.
+* __ONDERTEKENAAR\_LOCATIE:__ Hier zet je de locatie van de persoon die de attesten zal ondertekenen.
 
-* ONDERTEKENAAR\_NAAM = Hier zet je de naam van de persoon die de attesten zal ondertekenen.
+* __ONDERTEKENAAR\_NAAM__: Hier zet je de naam van de persoon die de attesten zal ondertekenen.
  
-* ONDERTEKENAAR\_FUNCTIE: Hier zet je de functie van de persoon die de attesten zal ondertekenen.
+* __ONDERTEKENAAR\_FUNCTIE:__ Hier zet je de functie van de persoon die de attesten zal ondertekenen.
 
-* OUTPUT\_MAP: Dit is de map waar de gegenereerde attesten in zullen verschijnen. Deze is bij default ingesteld op 'out'.
+* __OUTPUT\_MAP:__ Dit is de map waar de gegenereerde attesten in zullen verschijnen. Deze is bij default ingesteld op 'out'.
 
 ## Attesten genereren
 
